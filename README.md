@@ -1,3 +1,2 @@
 
-<!-- AUTO-GENERATED-CONTENT:END -->
-"# wpheadless" 
+#Headless WordPress on Azure
