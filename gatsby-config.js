@@ -6,9 +6,14 @@
  *
  */
 
-require('dotenv').config();
+
+require("dotenv").config({
+  path: `.env`,
+})
+
 console.log("ZBXXX: Environment Variable Check...");
 console.log(process.env.WPGRAPHQL_URL);
+console.log(process.env.GATSBY_WPGRAPHQL_URL);
 
 module.exports = {
   /**
