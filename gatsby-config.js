@@ -6,6 +6,9 @@
  *
  */
 
+console.log("ZBXXX: Environment Variable Check...");
+console.log(process.env.WPGRAPHQL_URL);
+
 module.exports = {
   /**
    * Adding plugins to this array adds them to your Gatsby site.
