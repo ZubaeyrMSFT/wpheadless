@@ -25,7 +25,7 @@ module.exports = {
        */
        resolve: 'gatsby-source-wordpress',
        options: {
-         "url": process.env.WORDPRESS_BACKEND_URL,
+         url: process.env.WPGRAPHQL_URL,
          auth: {
            htaccess: {
              username: process.env.WORDPRESS_ADMIN_USER,
