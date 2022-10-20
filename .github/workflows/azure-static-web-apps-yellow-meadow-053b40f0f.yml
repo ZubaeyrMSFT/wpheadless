@@ -36,9 +36,9 @@ jobs:
           output_location: "public" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
         env: # Add environment variables here
-          WPGRAPHQL_URL: "https://wpheadless-app.azurewebsites.net/graphql"
-          WORDPRESS_ADMIN_USER: "wordpressuser"
-          WORDPRESS_ADMIN_PASSWORD: "microsoft@123"
+          WPGRAPHQL_URL: ${{ secrets.WPGRAPHQL_URL }}
+          WORDPRESS_ADMIN_USER: ${{ secrets.WORDPRESS_ADMIN_USER }}
+          WORDPRESS_ADMIN_PASSWORD: ${{ secrets.WORDPRESS_ADMIN_PASSWORD }}
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
