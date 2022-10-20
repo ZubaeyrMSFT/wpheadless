@@ -7,19 +7,9 @@
  */
 
 
-require("dotenv").config({
-  path: `.env`,
-})
-
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
-
 
 console.log("ZBXXX: Environment Variable Check...");
 console.log(process.env.WPGRAPHQL_URL);
-console.log(process.env.GATSBY_WPGRAPHQL_URL);
-console.log(process.env.NODE_ENV);
 
 module.exports = {
   /**
