@@ -6,6 +6,7 @@
  *
  */
 
+require('dotenv').config();
 console.log("ZBXXX: Environment Variable Check...");
 console.log(process.env.WPGRAPHQL_URL);
 
