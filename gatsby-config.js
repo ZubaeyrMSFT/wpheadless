@@ -25,11 +25,11 @@ module.exports = {
        */
        resolve: 'gatsby-source-wordpress',
        options: {
-         "url": "https://wpheadless-app.azurewebsites.net/graphql",
+         "url": process.env.WORDPRESS_BACKEND_URL,
          auth: {
            htaccess: {
-             username: `wordpressuser`,
-             password: `microsoft@123`          
+             username: process.env.WORDPRESS_ADMIN_USER,
+             password: process.env.WORDPRESS_ADMIN_PASSWORD          
            },
          },
        }
