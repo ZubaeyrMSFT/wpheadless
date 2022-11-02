@@ -25,7 +25,7 @@ module.exports = {
        */
        resolve: 'gatsby-source-wordpress',
        options: {
-         "url": "https://wplinuxmig1-app.azurewebsites.net/graphql",
+         "url": "https://wpheadless-app.azurewebsites.net/graphql",
          auth: {
            htaccess: {
              username: `wordpressuser`,
