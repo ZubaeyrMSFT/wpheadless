@@ -25,11 +25,11 @@ module.exports = {
        */
        resolve: 'gatsby-source-wordpress',
        options: {
-         url: process.env.WPGRAPHQL_URL,
+         "url": "https://wplinuxmig1-app.azurewebsites.net/graphql",
          auth: {
            htaccess: {
-             username: process.env.WORDPRESS_ADMIN_USER,
-             password: process.env.WORDPRESS_ADMIN_PASSWORD          
+             username: `wordpressuser`,
+             password: `microsoft@123`          
            },
          },
        }
